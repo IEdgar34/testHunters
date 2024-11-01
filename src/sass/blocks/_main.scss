@@ -1,0 +1,27 @@
+.main {
+    width: 100%;
+    min-height: 100vh; /* max-height: 832px; */
+    padding: 40px 70px 123px 70px;
+    background: url("../images/desktopBg.png") no-repeat center / cover;
+    @media (max-width: 1024px) {
+        padding: 40px 10px 123px 10px;
+    }
+    @media (max-width: 980px) {
+        background-size: 1200px;
+        padding-top: 37px;
+    }
+
+    &__title {
+        max-width: 614px;
+        margin: 40px auto 0 auto;
+        color: rgb(255, 255, 255);
+        font-family: "ActayWide-Bold", sans-serif;
+        font-size: clamp(2.3125rem, 1.2083rem + 5.5208vw, 5.625rem);
+        font-weight: 700;
+        line-height: 114px;
+        text-align: center;
+        @media (max-width: 320px) {
+            line-height: 0;
+        }
+    }
+}

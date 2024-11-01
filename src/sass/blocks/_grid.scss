@@ -1,0 +1,138 @@
+.grid {
+    max-width: 1103px;
+    height: 470px;
+    margin: 40px auto 0 auto;
+    background: url("../icons/Group.svg") no-repeat center/contain;
+    transition: 0.4s all;
+
+    @media (max-width: 1280px) {
+        max-width: 900px;
+        background-image: url("../icons/Group.svg");
+        background-position: left;
+        background-size: 844px;
+        margin: 51px auto 0 auto;
+    }
+    @media (max-width: 1024px) {
+        background-position: center;
+        background-size: 844px;
+    }
+    @media (max-width: 980px) {
+        width: auto;
+        height: 219px;
+        background: none;
+        overflow: hidden;
+    }
+    &__item {
+        position: relative;
+        width: 286px;
+        height: 79px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 15px;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 35px 0px 35px 0px;
+        backdrop-filter: blur(15px);
+        background: rgba(255, 255, 255, 0.3);
+        @media (max-width: 1255px) {
+            width: 250px;
+        }
+        @media (max-width: 500px) {
+            width: 290px;
+        }
+        @media (max-width: 980px) {
+            transform: translateX(0) translateY(0) !important;
+            /* width: 310px; */
+            height: 100%;
+            flex-direction: column;
+            padding: 44px 18px;
+        }
+        &_circle {
+            flex-shrink: 0;
+            width: 51px;
+            height: 51px;
+            padding-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #5e7600;
+            border-radius: 50%;
+            border: 1px solid rgb(255, 255, 255);
+            box-shadow: 0px 10px 6px 0px rgba(255, 255, 255, 0.15);
+            color: rgb(255, 255, 255);
+            font-family: "Actay-regular", sans-serif;
+            font-size: 40px;
+            @media (max-width: 980px) {
+                width: 74px;
+                height: 74px;
+            }
+        }
+        &_txt {
+            color: rgb(246, 255, 210);
+            font-family: "Actay-regular", sans-serif;
+            font-size: 13px;
+            font-weight: 100;
+            line-height: 130%;
+            @media (max-width: 980px) {
+                text-align: center;
+            }
+        }
+        &:nth-child(1) {
+            transform: translateY(18px);
+            @media (max-width: 1280px) {
+                transform: translateY(50px);
+            }
+        }
+        &:nth-child(2) {
+            transform: translateY(185px) translateX(75px);
+            @media (max-width: 1280px) {
+                transform: translateY(168px) translateX(-15px);
+            }
+        }
+        &:nth-child(3) {
+            transform: translateY(203px) translateX(400px);
+            @media (max-width: 1280px) {
+                transform: translateY(178px) translateX(308px);
+            }
+        }
+        &:nth-child(4) {
+            transform: translateY(-107px) translateX(354px);
+            @media (max-width: 1280px) {
+                transform: translateY(-107px) translateX(240px);
+            }
+        }
+        &:nth-child(5) {
+            transform: translateY(-257px) translateX(805px);
+            @media (max-width: 1280px) {
+                transform: translateY(-257px) translateX(620px);
+            }
+        }
+        &:nth-child(6) {
+            transform: translateY(-181px) translateX(698px);
+            @media (max-width: 1280px) {
+                transform: translateY(-181px) translateX(531px);
+            }
+        }
+        img {
+            position: absolute;
+            right: -10%;
+            top: -35%;
+            @media (max-width: 1280px) {
+                right: -12%;
+            }
+        }
+    }
+    .slid {
+        width: max-content;
+        transition: transform 0.6s;
+        @media (max-width: 980px) {
+            height: 219px;
+            background: none;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 10px;
+            overflow: hidden;
+        }
+    }
+}
