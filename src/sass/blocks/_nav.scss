@@ -109,6 +109,7 @@
     }
     &_active {
         span {
+            transition:  0.6s;
             background-color: black;
             position: absolute;
             &:nth-child(1) {

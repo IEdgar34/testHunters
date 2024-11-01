@@ -4,7 +4,6 @@ const slider = () => {
     const prev = document.querySelector(".slider__prev");
     const slideItem = document.querySelectorAll(".grid__item");
     const s = document.querySelector(".slid");
-    console.log(window.getComputedStyle(s).columnGap);
 
     const slid = {
         wdth: sliderWrapper,
